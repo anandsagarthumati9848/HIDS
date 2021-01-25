@@ -1,4 +1,6 @@
 # Data-driving-cyber-security-research-using-machine-learning-tactics
+
+Abstract:
 The main goal of this research is to derive the challenges in intrusion based cyber security systems and providing the solutions using current bigdata and machine learning techniques. IDS monitors the system for malicious activity and protects a computer from unauthorized access from intruders.  Here we are going to build a host based intrusion detector which is capable of differentiating between the intrusion attack and normal attack. 
 
 
