@@ -16,3 +16,11 @@ The main goal of this research is to overcome the challenges in intrusion based 
                                    read, mmap, mmap, open, mmap, close
     
     This process is applied to normal sequences and intrusion sequences from UNM, MIT and ADFA-LD datasets. Bytokenizing into a sequence of 6-grams, we increase the amount of data for training as well as testing purposes.  Inaddition, the number of features will decrease when a trace is tokenized into smaller chunks, this will increase the efficiency of training as well as testing performances. We proceed to clean data by removing any rows or sequences that appear in both normal data and intrusion data. This step draws distinctive characteristics between the 2 classes and effectively boost machine learning performance. A row with normal sequence is labeled 0, whereas the one with intrusion sequence is labeled 1. We use normal data and intrusion data from each dataset to create a sample pool. If it is imbalanced, we use bootstrapping method create a balanced sample of normal sequences and intrusion sequences. Then, we split the sample into training and testing sets in a 70-30 ratio. By training with only signature sequences from both classes, we increase the model accuracy and recall (true positive rate) as well as decrease its false positive rate. 
+
+
+There are 2 files of codes:
+     Final_Version_HIDS.ipynb is used to train and test each dataset from UNM and MIT.
+     HIDS_ADFA.ipynb is used to train and test ADFA-LD dataset.
+  
+To run  Final_Version_HIDS.ipynb, load it into Google Colab along with the data from a sub directory (such as UNM/1.Synthetic Sendmail or MIT/Live Lpr). 
+To run HIDS_ADFA.ipynb, load it into Google Colab along with the data from ADFA-LD directory.
