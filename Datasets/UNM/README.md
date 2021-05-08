@@ -52,3 +52,40 @@ The UNM data format contains 2 integer columns: PID and System Call number. Addi
   
   Select Runtime and then Run All to run all blocks of codes. You should see results from each code block as the python notebook is running.
 
+## 6. Live Named: https://www.cs.unm.edu/~immsec/data/live-named.html
+ Normal data is extracted from named-live-unm.gz, which contains a file with over 9 million system calls. Intrusion data is extracted from named-intrusions.tar, which contains 2 .int files. Since there are lots of normal data yet a few of intrusion data, we only use 2000 normal system calls and put them in normal-named-live-2k.txt. We use all of the extracted intrusion data.
+   
+  To run the candidate algorithms with UNM Live Named dataset, open Final_Version_HIDS.ipynb in Google Colab, then load the .txt file from /6.Live_named/normal/ directory as normal data and the .int files from /6.Live_named/intrusion/ as intrusion data. 
+
+  In the first code block under Section Processing Data section, look for the line: '## Uncomment each line to load Normal data' and uncomment csv_file next to Live Named to load normal dataset. Look for the line: '## Uncomment each line to load Intrusion data:' and uncomment csv_file next to Live Named to load intrusion dataset.
+  
+  Select Runtime and then Run All to run all blocks of codes. You should see results from each code block as the python notebook is running.
+  
+  ## 7. Login and Ps: https://www.cs.unm.edu/~immsec/data/login-ps.html
+  We use all normal login and ps traces extracted from login-live-unm.tar and ps-live-unm.tar as normal data. For intrusion data, we use all of recovered and homegrown data extracted from the above link.
+ 
+ To run the candidate algorithms with UNM Login and Ps dataset, open Final_Version_HIDS.ipynb in Google Colab, then load the .txt files from /7.Login_and_ps/normal/ directory as normal data and the .int files from /7.Login_and_ps/intrusion/ as intrusion data. 
+
+  In the first code block under Section Processing Data section, look for the line: '## Uncomment each line to load Normal data' and uncomment csv_file next to Login and Ps to load normal dataset. Look for the line: '## Uncomment each line to load Intrusion data:' and uncomment csv_file next to Login and Ps to load intrusion dataset.
+  
+  Select Runtime and then Run All to run all blocks of codes. You should see results from each code block as the python notebook is running.
+  
+  ## 8. Inetd: https://www.cs.unm.edu/~immsec/data/live-inetd.html
+  We use all of normal data and intrusion data from the link above to train and test the models.
+  
+  To run the candidate algorithms with UNM Inetd dataset, open Final_Version_HIDS.ipynb in Google Colab, then load the .int file from /8.Inetd/normal/ directory as normal data and the .int files from /8.Inetd/intrusion/ as intrusion data. 
+
+  In the first code block under Section Processing Data section, look for the line: '## Uncomment each line to load Normal data' and uncomment csv_file next to Inetd to load normal dataset. Look for the line: '## Uncomment each line to load Intrusion data:' and uncomment csv_file next to Inetd to load intrusion dataset.
+  
+  Select Runtime and then Run All to run all blocks of codes. You should see results from each code block as the python notebook is running.
+  
+  ## 10. Stide: https://www.cs.unm.edu/~immsec/data/live-stide.html
+  Normal data is extracted from stidetraces.tar, which contains 13,726 folders. With such amount of data, we only combine 8,000 files to create a normal dataset stide-normal-8k.txt containing over 1 million system calls. Intrusion data is extracted from stide-intrusion.gz containining almost 300,000 system calls. 
+  
+  To run the candidate algorithms with UNM Inetd dataset, open Final_Version_HIDS.ipynb in Google Colab, then load the .int file from /10.Stide/normal/ directory as normal data and the file from /10.Stide/intrusion/ as intrusion data. 
+
+  In the first code block under Section Processing Data section, look for the line: '## Uncomment each line to load Normal data' and uncomment csv_file next to Stide to load normal dataset. Look for the line: '## Uncomment each line to load Intrusion data:' and uncomment csv_file next to Stide to load intrusion dataset.
+  
+  Select Runtime and then Run All to run all blocks of codes. You should see results from each code block as the python notebook is running.
+ 
+ 
