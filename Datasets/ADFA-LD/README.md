@@ -6,4 +6,5 @@ The main difference between datasets from ADFA versus from UNM is the data forma
 # Data Usage:
 
 Since there are more than enough normal data from the training dataset, we only Training_Data_Master.zip and Attack_Data_Master.zip files. We randomly choose 7000 normal sequences and 7000 intrusion sequences to create a sample pool and split them into a training and testing sets with a 70-30 ratio.
+
 To run the candidate algorithms with ADFA-LD dataset, open HIDS-ADFA.ipynb in Google Colab and load Training_Data_Master.zip and Attack_Data_Master.zip files. Select Runtime and then Run All to run all blocks of codes. You should see results from each code block as the python notebook is running. 
